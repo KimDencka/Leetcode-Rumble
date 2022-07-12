@@ -22,9 +22,12 @@ object AverageOfLevelsInBinaryTree extends App {
     )
   )
 
+  // TODO NEED TO SOLVE
   def averageOfLevels(root: TreeNode): Array[Double] = {
     ???
   }
 
 //  println(averageOfLevels(bt).toList)
 }
+
+class AverageOfLevelsInBinaryTree
