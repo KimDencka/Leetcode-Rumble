@@ -24,7 +24,7 @@ object RomanToInteger extends App {
     def run(str: String, acc: Int): Int = {
       val list = str.iterator.toSeq
       list match {
-        case l if l.isEmpty => acc
+        case Nil => acc
         case l if l.length <= 1 => acc + map(l.head.toString)
         case h :: el :: tail if map2.contains(s"$h$el") =>
           run(tail.mkString, acc + map2(s"$h$el"))

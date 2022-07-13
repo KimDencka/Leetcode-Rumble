@@ -2,31 +2,27 @@ package kim.dencka.easy.collection
 
 object BestTimeToBuyAndSellStock extends App {
 
-  def maxProfit(prices: Array[Int]): Int = {
-    ???
-  }
 // FIXME NEED TO FIX
 // MEMORY LIMIT EXCEEDED (WORKING SOLUTION)
-//  def maxProfit(prices: Array[Int]): Int = {
-//    if (prices.length > 1) {
-//      val profits = for {
-//        i <- prices.indices
-//        j <- i + 1 until prices.length
-//      } yield {
-//        prices(j) - prices(i)
-//      }
-//      val res = profits.drop(1).foldLeft(profits.head) { (prev, el) =>
-//        if (el > prev) el
-//        else prev
-//      }
-//      if (res > 0) res
-//      else 0
-//    } else {
-//      0
-//    }
-//  }
+  def maxProfit(prices: Array[Int]): Int = {
+    prices.tail.foldLeft(0, prices.head) { case ((acc, cur), el) =>
+      if (cur - el > 0) {
+        (acc, el)
+      } else {
+        val diff = math.abs(cur - el)
+        if (diff > acc) (diff, cur)
+        else (acc, cur)
+      }
+    }._1
+  }
 
   println(maxProfit(Array(1)))
   println(maxProfit(Array(7, 1, 5, 3, 6, 4)))
+
+  // TODO THERE IS SOLUTION FROM DISCUSSION (I LIKE IT)
+//  def maxProfit(prices: Array[Int]): Int =
+//    prices.foldLeft((Int.MaxValue, 0)) {
+//      case ((minPrice, maxProfit), price) => (minPrice min price, maxProfit max (price - minPrice))
+//    }._2
 
 }
