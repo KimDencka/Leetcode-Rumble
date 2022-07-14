@@ -1,10 +1,8 @@
-package kim.dencka.easy.collection
-
-import scala.collection.immutable.LinearSeq
+package kim.dencka.easy.linked_list
 
 object IntersectionOfTwoLinkedLists extends App {
 
-  case class ListNode(val x: Int, val next: ListNode = null)
+  class ListNode(val x: Int, val next: ListNode = null)
 
   val list1 = new ListNode(4, new ListNode(1, new ListNode(8, new ListNode(4, new ListNode(5)))))
   val list2 = new ListNode(5, new ListNode(6, new ListNode(1, new ListNode(8, new ListNode(4, new ListNode(5))))))
@@ -26,7 +24,6 @@ object IntersectionOfTwoLinkedLists extends App {
       }
     run(headA, headB)
   }
-
 
 //  def getIntersectionNode(headA: ListNode, headB: ListNode): ListNode = {
 //    @scala.annotation.tailrec
