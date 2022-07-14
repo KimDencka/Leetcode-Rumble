@@ -20,7 +20,7 @@ object RemoveDuplicatesFromSortedList extends App {
         case h :: tail => run(tail, new ListNode(h, acc))
         case Nil => acc
       }
-      run(list.reverse.drop(1), new ListNode(list.last, null))
+      run(list.reverse.tail, new ListNode(list.last, null))
     }
     def removeDuplicates(nums: List[Int]): List[Int] = {
       val result = nums.drop(1).foldLeft((nums.head, 0, List(nums.head))) { case ((prev, counter, acc), el) =>
