@@ -1,17 +1,8 @@
 package kim.dencka.easy.linked_list
 
+import LINKED_LIST_STRUCTURE._
+
 object RemoveDuplicatesFromSortedList extends App {
-
-  class ListNode(_x: Int = 0, _next: ListNode = null) {
-    var next: ListNode = _next
-    var x: Int = _x
-  }
-
-  val list =
-    new ListNode(
-      1,
-      new ListNode(1, new ListNode(2, new ListNode(3, new ListNode(3, null))))
-    )
 
   def deleteDuplicates(head: ListNode): ListNode = {
     def listToListNode(list: List[Int]): ListNode = {
@@ -49,6 +40,6 @@ object RemoveDuplicatesFromSortedList extends App {
     }
   }
 
-  println(deleteDuplicates(list))
+  println(deleteDuplicates(list2))
 
 }

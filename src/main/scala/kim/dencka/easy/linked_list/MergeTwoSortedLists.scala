@@ -1,12 +1,8 @@
 package kim.dencka.easy.linked_list
 
-object MergeTwoSortedLists extends App {
+import LINKED_LIST_STRUCTURE._
 
-  //   Definition for singly-linked list.
-  class ListNode(_x: Int = 0, _next: ListNode = null) {
-    var next: ListNode = _next
-    var x: Int = _x
-  }
+object MergeTwoSortedLists extends App {
 
   @annotation.tailrec
   def listNodeToList(listNode: ListNode, list: List[Int]): List[Int] =
@@ -48,11 +44,7 @@ object MergeTwoSortedLists extends App {
       listToListNode(res)
     }
 
-  val list1 = new ListNode(1, new ListNode(2, new ListNode(4)))
-  val list2 = new ListNode(1, new ListNode(3, new ListNode(4)))
 
-  val l1 = List(1, 2, 4)
-  val l2 = List(1, 3, 4)
-  mergeTwoLists(null, null)
+  mergeTwoLists(list3, list4)
 
 }

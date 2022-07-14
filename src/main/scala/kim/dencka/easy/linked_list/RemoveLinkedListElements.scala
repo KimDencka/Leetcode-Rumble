@@ -1,31 +1,8 @@
 package kim.dencka.easy.linked_list
 
+import LINKED_LIST_STRUCTURE._
+
 object RemoveLinkedListElements extends App {
-
-  class ListNode(val x: Int, val next: ListNode = null)
-
-  val list =
-    new ListNode(
-      1,
-      new ListNode(
-        2,
-        new ListNode(
-          6,
-          new ListNode(
-            3,
-            new ListNode(
-              4,
-              new ListNode(
-                5,
-                new ListNode(
-                  6
-                )
-              )
-            )
-          )
-        )
-      )
-    )
 
   def removeElements(head: ListNode, `val`: Int): ListNode = {
     def run(ln: ListNode): ListNode = ln match {
@@ -36,6 +13,6 @@ object RemoveLinkedListElements extends App {
     run(head)
   }
 
-  println(removeElements(list, 6))
+  println(removeElements(list1, 6))
 
 }

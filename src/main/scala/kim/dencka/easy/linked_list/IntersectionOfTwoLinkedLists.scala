@@ -1,11 +1,8 @@
 package kim.dencka.easy.linked_list
 
+import LINKED_LIST_STRUCTURE._
+
 object IntersectionOfTwoLinkedLists extends App {
-
-  class ListNode(val x: Int, val next: ListNode = null)
-
-  val list1 = new ListNode(4, new ListNode(1, new ListNode(8, new ListNode(4, new ListNode(5)))))
-  val list2 = new ListNode(5, new ListNode(6, new ListNode(1, new ListNode(8, new ListNode(4, new ListNode(5))))))
 
   def getIntersectionNode(headA: ListNode, headB: ListNode): ListNode = {
     @annotation.tailrec
@@ -49,6 +46,6 @@ object IntersectionOfTwoLinkedLists extends App {
 //    helper(headA, headB)
 //  }
 
-  println(getIntersectionNode(list1, list2))
+  println(getIntersectionNode(list5, list6))
 
 }

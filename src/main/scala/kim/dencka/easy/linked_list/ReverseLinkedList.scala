@@ -1,8 +1,8 @@
 package kim.dencka.easy.linked_list
 
-object ReverseLinkedList extends App {
+import LINKED_LIST_STRUCTURE._
 
-  class ListNode(val x: Int, val next: ListNode = null)
+object ReverseLinkedList extends App {
 
   def reverseList(head: ListNode): ListNode = {
     @annotation.tailrec

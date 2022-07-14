@@ -1,11 +1,8 @@
 package kim.dencka.easy.linked_list
 
-object LinkedListCycle extends App {
+import LINKED_LIST_STRUCTURE._
 
-  class ListNode(
-    var x: Int,
-    var next: ListNode = null
-  )
+object LinkedListCycle extends App {
 
   def hasCycle(head: ListNode): Boolean = {
     @annotation.tailrec
