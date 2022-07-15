@@ -9,15 +9,10 @@ object SearchInsertPosition extends App {
     )(low: Int = 0, high: Int = arr.length - 1): Int = {
       if (low > high) return low + (high - low) / 2
       val middle = low + (high - low) / 2
-      if (arr(middle) == elem) {
-        middle
-      }
-      else if (arr(middle) > elem) {
-        run(arr, elem)(low, middle - 1)
-      }
-      else {
-        run(arr, elem)(middle + 1, high)
-      }
+
+      if (arr(middle) == elem) middle
+      else if (arr(middle) > elem) run(arr, elem)(low, middle - 1)
+      else run(arr, elem)(middle + 1, high)
     }
     run(nums, target)()
   }
