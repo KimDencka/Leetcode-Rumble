@@ -21,7 +21,7 @@ object PalindromeLinkedList extends App {
     compare(head, reverse(head, null))
   }
 
-// TODO THERE IS SOLUTION FROM DISCUSSION (I LIKE IT)
+// DEN_INFO THERE IS SOLUTION FROM DISCUSSION (I LIKE IT)
 
 //  def isPalindrome(head: ListNode): Boolean = {
 //    def go(lhead: ListNode, node: ListNode): ListNode = {

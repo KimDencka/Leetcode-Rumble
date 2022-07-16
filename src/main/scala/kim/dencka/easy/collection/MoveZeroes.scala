@@ -2,7 +2,7 @@ package kim.dencka.easy.collection
 
 object MoveZeroes extends App {
 
-  // TODO THERE IS SOLUTION FROM DISCUSSION
+  // DEN_INFO THERE IS SOLUTION FROM DISCUSSION
 
 //  def moveZeroes(nums: Array[Int]): Unit = {
 //    @annotation.tailrec

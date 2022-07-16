@@ -26,7 +26,7 @@ object PascalsTriangle extends App {
     run(1, List(1), List(List(1)))
   }
 
-  // TODO THERE IS SOLUTION FROM DISCUSSION
+  // DEN_INFO THERE IS SOLUTION FROM DISCUSSION
 
   // FROM DISCUSSION (I LIKE IT)
     def generate2(numRows: Int): List[List[Int]] = {

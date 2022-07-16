@@ -46,21 +46,21 @@ object BinaryTreeRightSideView extends App {
       )
     )
 
-  // TODO NOT WORKING
+  // DEN_INFO NOT WORKING
   def rightSideView(root: TreeNode): List[Int] = {
     def run(tree: TreeNode, isRight: Boolean): List[Int] =
       if (tree == null) List()
       else if (tree.right != null)
-        if (isRight) List(tree.value) ++ run(tree.right, true)
-        else run(tree.right, true)
+        if (isRight) List(tree.value) ++ run(tree.right, isRight = true)
+        else run(tree.right, isRight = true)
       else if (tree.right != null && tree.left != null)
-        if (isRight) List(tree.value) ++ run(tree.right, true) ++ run(tree.left, false)
-        else run(tree.right, false) ++ run(tree.left, false)
-      else if (tree.right == null) List(tree.value) ++ run(tree.left, true)
-      else if (isRight) List(tree.value) ++ run(tree.right, true) ++ run(tree.left, false)
-      else run(tree.right, true) ++ run(tree.left, false)
+        if (isRight) List(tree.value) ++ run(tree.right, isRight = true) ++ run(tree.left, isRight = false)
+        else run(tree.right, isRight = false) ++ run(tree.left, isRight = false)
+      else if (tree.right == null) List(tree.value) ++ run(tree.left, isRight = true)
+      else if (isRight) List(tree.value) ++ run(tree.right, isRight = true) ++ run(tree.left, isRight = false)
+      else run(tree.right, isRight = true) ++ run(tree.left, isRight = false)
 
-    run(root, true)
+    run(root, isRight = true)
   }
 
   println(rightSideView(bt2))

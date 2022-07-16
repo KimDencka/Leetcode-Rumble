@@ -59,7 +59,7 @@ object SecondMinimumNodeInBinaryTree extends App {
     else -1
   }
 
-  // TODO THERE IS SOLUTION FROM DISCUSSION
+  // DEN_INFO THERE IS SOLUTION FROM DISCUSSION
 
   // FROM DISCUSSION
   //   def findSecondMinimumValue(root: TreeNode): Int = {
