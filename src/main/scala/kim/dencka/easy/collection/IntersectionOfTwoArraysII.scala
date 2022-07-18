@@ -2,6 +2,8 @@ package kim.dencka.easy.collection
 
 object IntersectionOfTwoArraysII extends App {
 
+  // DEN_INFO SEE LEETCODE_POLYGON
+
   val arr1 = Array(1, 2, 3, 4, 3)
   val arr2 = Array(5, 1, 4, 6, 2, 3, 7, 4, 3)
 
