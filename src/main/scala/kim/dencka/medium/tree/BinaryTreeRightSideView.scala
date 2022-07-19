@@ -46,7 +46,7 @@ object BinaryTreeRightSideView extends App {
       )
     )
 
-  // DEN_INFO NOT WORKING
+  // KIM_INFO NOT WORKING
   def rightSideView(root: TreeNode): List[Int] = {
     def run(tree: TreeNode, isRight: Boolean): List[Int] =
       if (tree == null) List()

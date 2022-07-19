@@ -2,7 +2,7 @@ package kim.dencka.easy.collection
 
 object ThirdMaximumNumber extends App {
 
-  // DEN_INFO SEE LEETCODE_POLYGON
+  // KIM_INFO SEE LEETCODE_POLYGON
   import scala.collection.immutable.SortedSet
 
   def thirdMax(nums: Array[Int]): Int = {

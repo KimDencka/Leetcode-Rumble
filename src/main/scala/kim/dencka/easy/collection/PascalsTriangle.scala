@@ -1,5 +1,5 @@
 package kim.dencka.easy.collection
-class SecondMinimumNodeInBinaryTree
+
 object PascalsTriangle extends App {
   def generate(numRows: Int): List[List[Int]] = {
     def nextRow(list: List[Int]): List[Int] = {
@@ -26,7 +26,7 @@ object PascalsTriangle extends App {
     run(1, List(1), List(List(1)))
   }
 
-  // DEN_INFO THERE IS SOLUTION FROM DISCUSSION
+  // KIM_INFO THERE IS SOLUTION FROM DISCUSSION
 
   // FROM DISCUSSION (I LIKE IT)
     def generate2(numRows: Int): List[List[Int]] = {

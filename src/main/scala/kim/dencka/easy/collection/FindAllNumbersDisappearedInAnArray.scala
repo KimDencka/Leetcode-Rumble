@@ -2,7 +2,7 @@ package kim.dencka.easy.collection
 
 object FindAllNumbersDisappearedInAnArray extends App {
 
-  // DEN_INFO SEE LEETCODE_POLYGON
+  // KIM_INFO SEE LEETCODE_POLYGON
 
   def findDisappearedNumbers(nums: Array[Int]): List[Int] = {
     nums.foreach { num =>

@@ -27,7 +27,7 @@ object PascalsTriangleII extends App {
     run(0, List(1), List(List(1)))
   }
 
-  // DEN_INFO THERE IS SOLUTION FROM DISCUSSION
+  // KIM_INFO THERE IS SOLUTION FROM DISCUSSION
 
   // FROM DISCUSSION (MODIFIED. SEE PASCALS TRIANGLE)
   //    def getRow(rowIndex: Int): List[Int] = {
