@@ -1,6 +1,6 @@
 package kim.dencka.easy.linked_list
 
-import LINKED_LIST_STRUCTURE._
+import kim.dencka.payloads.LINKED_LIST_STRUCTURE._
 
 object ReverseLinkedList extends App {
 

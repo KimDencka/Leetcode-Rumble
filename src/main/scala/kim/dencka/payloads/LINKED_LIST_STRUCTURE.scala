@@ -1,4 +1,4 @@
-package kim.dencka.easy.linked_list
+package kim.dencka.payloads
 
 object LINKED_LIST_STRUCTURE {
   case class ListNode(val x: Int, val next: ListNode = null)
