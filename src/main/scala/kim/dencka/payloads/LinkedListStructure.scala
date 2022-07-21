@@ -1,6 +1,6 @@
 package kim.dencka.payloads
 
-object LINKED_LIST_STRUCTURE {
+object LinkedListStructure {
   case class ListNode(val x: Int, val next: ListNode = null)
 
   // 1,2,3,4,5,6,7,8,9
