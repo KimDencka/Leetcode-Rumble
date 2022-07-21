@@ -48,21 +48,4 @@ object BinaryTreeInorderTraversal extends App {
 
   println(inorderTraversal(bt))
 
-  def inorderTraversal2(root: TreeNode): List[Int] = {
-    var rst: List[Int] = List()
-    var stack: List[TreeNode] = List()
-    var node = root
-    while (node != null || stack.nonEmpty) {
-      while (node != null) {
-        stack = stack :+ node
-        node = node.left
-      }
-      val nd = stack.last
-      rst = rst :+ nd.value
-      stack = stack.take(stack.length - 1)
-      node = nd.right
-    }
-    rst
-  }
-
 }

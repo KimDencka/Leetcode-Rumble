@@ -1,6 +1,6 @@
 package kim.dencka.medium.linked_list
 
-import kim.dencka.payloads.LINKED_LIST_STRUCTURE._
+import kim.dencka.payloads.LinkedListStructure._
 
 object ReverseLinkedListII extends App {
 
