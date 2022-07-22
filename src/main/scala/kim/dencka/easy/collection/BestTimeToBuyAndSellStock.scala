@@ -19,7 +19,7 @@ object BestTimeToBuyAndSellStock extends App {
   println(maxProfit(Array(1)))
   println(maxProfit(Array(7, 1, 5, 3, 6, 4)))
 
-  // KIM_INFO THERE IS SOLUTION FROM DISCUSSION (I LIKE IT)
+  // KIM_INFO THERE IS A SOLUTION FROM DISCUSSION (I LIKE IT)
 //  def maxProfit(prices: Array[Int]): Int =
 //    prices.foldLeft((Int.MaxValue, 0)) {
 //      case ((minPrice, maxProfit), price) => (minPrice min price, maxProfit max (price - minPrice))
