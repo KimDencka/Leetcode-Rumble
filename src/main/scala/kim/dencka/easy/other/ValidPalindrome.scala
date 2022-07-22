@@ -1,4 +1,4 @@
-package kim.dencka.easy.collection
+package kim.dencka.easy.other
 
 object ValidPalindrome extends App {
 

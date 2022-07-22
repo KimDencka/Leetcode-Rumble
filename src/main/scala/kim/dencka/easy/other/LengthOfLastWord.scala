@@ -1,4 +1,4 @@
-package kim.dencka.easy.collection
+package kim.dencka.easy.other
 
 object LengthOfLastWord extends App {
   def lengthOfLastWord(s: String): Int =
