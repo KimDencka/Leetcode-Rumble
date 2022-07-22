@@ -24,4 +24,10 @@ object PartitionList extends App {
 
   println(partition(list8, 3))
 
+  // KIM_INFO THERE IS A SOLUTION FROM DISCUSSION
+//  def partition(head: ListNode, x: Int): ListNode =
+//    Iterator.unfold(head)(Option(_).map(n => (n.x, n.next))).partition(_ < x) match {
+//      case (l, r) => (l ++ r).foldRight(null: ListNode)(ListNode)
+//    }
+
 }
