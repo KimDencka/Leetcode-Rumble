@@ -1,4 +1,4 @@
-package kim.dencka.easy.collection
+package kim.dencka.easy.other
 
 object SqrtX extends App {
   val t1 = System.nanoTime

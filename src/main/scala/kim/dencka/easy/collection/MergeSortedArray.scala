@@ -3,17 +3,15 @@ package kim.dencka.easy.collection
 object MergeSortedArray extends App {
 
   def merge(nums1: Array[Int], m: Int, nums2: Array[Int], n: Int): Unit = {
-    def merge(nums1: Array[Int], m: Int, nums2: Array[Int], n: Int): Unit = {
-      for ((i, j) <- (m until nums1.length).zip(nums2.indices))
-        nums1(i) = nums2(j)
-      val sortedArr = nums1.sorted
-      for (i <- nums1.indices)
-        nums1(i) = sortedArr(i)
-      println(nums1.toList)
-    }
+    for ((i, j) <- (m until nums1.length).zip(nums2.indices))
+      nums1(i) = nums2(j)
+    val sortedArr = nums1.sorted
+    for (i <- nums1.indices)
+      nums1(i) = sortedArr(i)
+    println(nums1.toList)
   }
 
-  //  FROM DISCUSS
+  //  KIM_INFO FROM DISCUSSION
   //  def merge(nums1: Array[Int], m: Int, nums2: Array[Int], n: Int): Unit = {
   //    import scala.annotation.tailrec
   //    @tailrec

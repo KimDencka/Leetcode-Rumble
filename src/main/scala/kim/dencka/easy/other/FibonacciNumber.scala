@@ -1,4 +1,4 @@
-package kim.dencka.easy.collection
+package kim.dencka.easy.other
 
 object FibonacciNumber extends App {
 
