@@ -1,4 +1,4 @@
-package kim.dencka.java.easy.collection;
+package kim.dencka.java.medium.collection;
 
 import java.util.Arrays;
 
