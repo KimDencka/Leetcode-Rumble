@@ -15,7 +15,7 @@ object RemoveOutermostParentheses extends App {
     }._2.mkString.reverse
   }
 
-  // KIM_INFO THERE IS SOLUTION FROM DISCUSSION
+  // KIM_INFO THERE IS A SOLUTION FROM DISCUSSION
 //  case class State(count: Int, running: StringBuilder)
 //
 //  def removeOuterParentheses(S: String): String = {
