@@ -9,15 +9,15 @@ public class MajorityElement {
     public static int majorityElement(int[] nums) {
         // cheating
 //        nums[nums.length / 2]
+        int cnt = 0;
+        int maj = 0;
+
         for (int num : nums) {
-            int result = 0;
-            for (int n : nums) {
-                if (n == num) result++;
-            }
-            if (result > nums.length / 2) {
-                return num;
-            }
+            if (cnt == 0) maj = num;
+
+            if (maj != num) cnt--;
+            else cnt++;
         }
-        return -1;
+        return maj;
     }
 }
