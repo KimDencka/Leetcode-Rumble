@@ -1,6 +1,6 @@
 package kim.dencka.java.easy.collection;
 
-public class KthMissingPositiveNumber {
+class KthMissingPositiveNumber {
 
     // KIM_INFO THERE IS NO SCALA SOLUTION
 

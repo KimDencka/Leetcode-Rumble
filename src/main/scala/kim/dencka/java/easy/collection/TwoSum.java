@@ -2,7 +2,7 @@ package kim.dencka.java.easy.collection;
 
 import java.util.Arrays;
 
-public class TwoSum {
+class TwoSum {
     public static void main(String[] args) {
         int[] nums = {0, 0, 0, 0, 2, 0, 0, 0, 0, 6, 0, 0};
         System.out.println(Arrays.toString(twoSum(nums, 8)));

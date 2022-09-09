@@ -1,6 +1,6 @@
 package kim.dencka.java.easy.collection;
 
-public class ArrangingCoins {
+class ArrangingCoins {
 
     // KIM_INFO THERE IS NO SCALA SOLUTION
 

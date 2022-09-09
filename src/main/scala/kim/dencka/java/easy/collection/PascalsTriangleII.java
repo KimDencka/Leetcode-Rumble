@@ -3,7 +3,7 @@ package kim.dencka.java.easy.collection;
 import java.util.ArrayList;
 import java.util.List;
 
-public class PascalsTriangleII {
+class PascalsTriangleII {
     public static void main(String[] args) {
         System.out.println(getRow(5));
     }

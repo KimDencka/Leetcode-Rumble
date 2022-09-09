@@ -2,7 +2,7 @@ package kim.dencka.java.medium.other;
 
 import java.util.*;
 
-public class LongestSubstringWithoutRepeatingCharacters {
+class LongestSubstringWithoutRepeatingCharacters {
     public static void main(String[] args) {
         System.out.println(lengthOfLongestSubstring("sadfhlkahvljsdhaflhaosdfaasdf"));
         System.out.println(lengthOfLongestSubstring(" "));

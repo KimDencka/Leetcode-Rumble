@@ -2,7 +2,7 @@ package kim.dencka.java.medium.collection;
 
 import java.util.*;
 
-public class TreeSum {
+class TreeSum {
     // KIM_INFO THERE IS NO SCALA SOLUTION
 
     public static void main(String[] args) {

@@ -2,7 +2,7 @@ package kim.dencka.java.easy.collection;
 
 import java.util.Arrays;
 
-public class MoveZeroes {
+class MoveZeroes {
     public static void main(String[] args) {
         int[] nums = {1, 0, 1};
         int[] nums2 = {0, 1, 0, 3, 12};

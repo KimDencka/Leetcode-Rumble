@@ -3,7 +3,7 @@ package kim.dencka.java.easy.collection;
 import java.util.HashMap;
 import java.util.List;
 
-public class ContainsDuplicates {
+class ContainsDuplicates {
     public static void main(String[] args) {
         int[] nums = {1, 1, 1, 3, 3, 4, 3, 2, 4, 2};
         int[] nums2 = {1, 2, 3, 4, 5, 6, 7, 8, 9};
