@@ -9,7 +9,7 @@ class MergeIntervals {
     }
 
     public static int[][] merge(int[][] intervals) {
-        Arrays.sort(intervals, (a, b) -> Integer.compare(a[0], b[0]));
+        Arrays.sort(intervals, Comparator.comparingInt(a -> a[0]));
         LinkedList<int[]> merged = new LinkedList<>();
         for (int[] interval : intervals) {
             if (merged.isEmpty() || merged.getLast()[1] < interval[0]) {
