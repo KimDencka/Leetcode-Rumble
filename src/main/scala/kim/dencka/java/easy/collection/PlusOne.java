@@ -3,7 +3,7 @@ package kim.dencka.java.easy.collection;
 import java.math.BigInteger;
 import java.util.Arrays;
 
-public class PlusOne {
+class PlusOne {
 
     // KIM_INFO SHOULD RESOLVE (JAVA)
 

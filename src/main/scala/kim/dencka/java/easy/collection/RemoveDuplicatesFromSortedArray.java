@@ -1,6 +1,6 @@
 package kim.dencka.java.easy.collection;
 
-public class RemoveDuplicatesFromSortedArray {
+class RemoveDuplicatesFromSortedArray {
     public static void main(String[] args) {
         int[] nums = new int[]{1, 1, 2};
         System.out.println(removeDuplicates(nums));

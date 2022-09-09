@@ -2,7 +2,7 @@ package kim.dencka.java.medium.collection;
 
 import java.util.Arrays;
 
-public class FindFirstAndLastPositionOfElementInSortedArray {
+class FindFirstAndLastPositionOfElementInSortedArray {
 
     // KIM_INFO THERE IS NO SCALA SOLUTION
 

@@ -3,7 +3,7 @@ package kim.dencka.java.easy.collection;
 import java.util.ArrayList;
 import java.util.List;
 
-public class SummaryRanges {
+class SummaryRanges {
     public static void main(String[] args) {
         int[] nums = {};
         System.out.println(summaryRanges(nums));

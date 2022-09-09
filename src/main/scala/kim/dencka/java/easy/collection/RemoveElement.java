@@ -1,6 +1,6 @@
 package kim.dencka.java.easy.collection;
 
-public class RemoveElement {
+class RemoveElement {
     public static void main(String[] args) {
         int[] nums = {0, 1, 2, 2, 3, 0, 4, 2};
         System.out.println(removeElement(nums, 2));

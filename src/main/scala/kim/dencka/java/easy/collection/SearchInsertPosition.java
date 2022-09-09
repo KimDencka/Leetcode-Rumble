@@ -1,6 +1,6 @@
 package kim.dencka.java.easy.collection;
 
-public class SearchInsertPosition {
+class SearchInsertPosition {
     public static void main(String[] args) {
         int[] nums = {1, 3, 5, 6, 8, 10};
         System.out.println(searchInsert(nums, 5));

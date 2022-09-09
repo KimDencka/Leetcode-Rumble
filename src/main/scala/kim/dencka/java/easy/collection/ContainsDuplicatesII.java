@@ -2,7 +2,7 @@ package kim.dencka.java.easy.collection;
 
 import java.util.HashMap;
 
-public class ContainsDuplicatesII {
+class ContainsDuplicatesII {
     public static void main(String[] args) {
         int[] nums1 = {1, 2, 3, 1};
         int[] nums2 = {1, 0, 1, 1};

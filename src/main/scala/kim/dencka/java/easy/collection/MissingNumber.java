@@ -1,6 +1,6 @@
 package kim.dencka.java.easy.collection;
 
-public class MissingNumber {
+class MissingNumber {
     public static void main(String[] args) {
         int[] nums = {3, 0, 1};
         int[] nums2 = {9, 6, 4, 2, 3, 5, 7, 0, 1};
