@@ -3,6 +3,8 @@ package kim.dencka.java.medium.collection;
 import java.util.*;
 
 class BagOfTokens {
+    // KIM_INFO NOT SOLVED IN SCALA
+
     public static void main(String[] args) {
         int[] input = {100, 200, 300, 400};
         System.out.println(bagOfTokensScore(input, 200));
