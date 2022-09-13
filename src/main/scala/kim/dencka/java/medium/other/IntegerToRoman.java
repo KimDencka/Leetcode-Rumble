@@ -1,6 +1,8 @@
 package kim.dencka.java.medium.other;
 
 class IntegerToRoman {
+    // KIM_INFO NOT SOLVED IN SCALA
+
     public static void main(String[] args) {
         System.out.println(intToRoman(1234));
     }

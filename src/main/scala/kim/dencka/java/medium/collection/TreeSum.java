@@ -3,7 +3,7 @@ package kim.dencka.java.medium.collection;
 import java.util.*;
 
 class TreeSum {
-    // KIM_INFO THERE IS NO SCALA SOLUTION
+    // KIM_INFO NOT SOLVED IN SCALA
 
     public static void main(String[] args) {
         int[] nums = {-1, 0, 1, 2, -1, -4};
