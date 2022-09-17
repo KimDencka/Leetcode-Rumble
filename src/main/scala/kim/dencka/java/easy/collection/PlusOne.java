@@ -18,18 +18,7 @@ class PlusOne {
         if (digits[n - 1] != 9) {
             digits[n - 1] += 1;
             return digits;
-        } else if (digits[n - 1] == 9 && digits[0] != 9) {
-            mem = 1;
-            for (int i = n - 1; i >= 0; i--) {
-                if (digits[i] != 9) {
-                    digits[i] += mem;
-                    mem = 0;
-                } else {
-                    digits[i] = mem != 0 ? 0 : digits[i];
-                }
-            }
-            return digits;
-        } else if (digits[n - 1] == 9 && digits[0] == 9) {
+        } else {
             mem = 1;
             for (int i = n - 1; i >= 0; i--) {
                 if (digits[i] != 9) {
@@ -48,7 +37,6 @@ class PlusOne {
                 return res;
             }
         }
-        return null;
     }
 
 //    public static int[] plusOne(int[] digits) {
