@@ -1,6 +1,5 @@
 package kim.dencka.java.easy.collection;
 
-import java.math.BigInteger;
 import java.util.Arrays;
 
 class PlusOne {
@@ -14,13 +13,52 @@ class PlusOne {
     }
 
     public static int[] plusOne(int[] digits) {
-        String str = "";
-        for (int n : digits) str += n;
-        char[] incrd = (new BigInteger(str).add(new BigInteger("1"))).toString().toCharArray();
-        int[] res = new int[incrd.length];
-        for (int i = 0; i < incrd.length; i++) {
-            res[i] = incrd[i] - '0';
+        int n = digits.length;
+        int mem;
+        if (digits[n - 1] != 9) {
+            digits[n - 1] += 1;
+            return digits;
+        } else if (digits[n - 1] == 9 && digits[0] != 9) {
+            mem = 1;
+            for (int i = n - 1; i >= 0; i--) {
+                if (digits[i] != 9) {
+                    digits[i] += mem;
+                    mem = 0;
+                } else {
+                    digits[i] = mem != 0 ? 0 : digits[i];
+                }
+            }
+            return digits;
+        } else if (digits[n - 1] == 9 && digits[0] == 9) {
+            mem = 1;
+            for (int i = n - 1; i >= 0; i--) {
+                if (digits[i] != 9) {
+                    digits[i] += mem;
+                    mem = 0;
+                } else {
+                    digits[i] = mem != 0 ? 0 : digits[i];
+                }
+            }
+            if (mem == 0) {
+                return digits;
+            } else {
+                int[] res = new int[n + 1];
+                System.arraycopy(digits, 0, res, 1, n);
+                res[0] = mem;
+                return res;
+            }
         }
-        return res;
+        return null;
     }
+
+//    public static int[] plusOne(int[] digits) {
+//        String str = "";
+//        for (int n : digits) str += n;
+//        char[] incrd = (new BigInteger(str).add(new BigInteger("1"))).toString().toCharArray();
+//        int[] res = new int[incrd.length];
+//        for (int i = 0; i < incrd.length; i++) {
+//            res[i] = incrd[i] - '0';
+//        }
+//        return res;
+//    }
 }
