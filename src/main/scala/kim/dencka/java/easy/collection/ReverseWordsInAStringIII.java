@@ -1,6 +1,8 @@
 package kim.dencka.java.easy.collection;
 
 class ReverseWordsInAStringIII {
+    // KIM_INFO NOT SOLVED IN SCALA
+
     public static void main(String[] args) {
         System.out.println(reverseWords("Let's take LeetCode contest"));
     }
