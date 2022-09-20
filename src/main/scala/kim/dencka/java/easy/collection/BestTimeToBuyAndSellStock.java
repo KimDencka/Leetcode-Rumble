@@ -7,18 +7,31 @@ class BestTimeToBuyAndSellStock {
     }
 
     public static int maxProfit(int[] prices) {
-        int cur = prices[0];
-        int res = 0;
+        int maxProfit = 0;
+        int j = 0;
+        int diff;
         for (int i = 1; i < prices.length; i++) {
-            if (cur - prices[i] > 0) {
-                cur = prices[i];
-            } else {
-                int diff = Math.abs(cur - prices[i]);
-                if (diff > res) {
-                    res = diff;
-                }
-            }
+            diff = prices[i] - prices[j];
+            if (diff < 0) j = i;
+            else maxProfit = Math.max(maxProfit, diff);
         }
-        return res;
+        return maxProfit;
     }
+
+    // THE SAME SOLUTION
+//    public static int maxProfit(int[] prices) {
+//        int cur = prices[0];
+//        int res = 0;
+//        for (int i = 1; i < prices.length; i++) {
+//            if (cur - prices[i] > 0) {
+//                cur = prices[i];
+//            } else {
+//                int diff = Math.abs(cur - prices[i]);
+//                if (diff > res) {
+//                    res = diff;
+//                }
+//            }
+//        }
+//        return res;
+//    }
 }
