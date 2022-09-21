@@ -1,4 +1,4 @@
-package kim.dencka.java.medium.tree;
+package kim.dencka.java.easy.tree;
 
 import kim.dencka.java.payloads.TreeNode;
 
