@@ -1,6 +1,8 @@
 package kim.dencka.java.medium.collection;
 
 class MaxAreaOfIsland {
+    // KIM_INFO NOT SOLVED IN SCALA
+
     public static void main(String[] args) {
         int[][] grid = {
                 {0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0},
