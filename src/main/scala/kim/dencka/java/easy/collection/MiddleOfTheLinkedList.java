@@ -1,5 +1,7 @@
 package kim.dencka.java.easy.collection;
 
+import kim.dencka.java.payloads.ListNode;
+
 class MiddleOfTheLinkedList {
     public static void main(String[] args) {
         ListNode input = new ListNode(1,
@@ -31,19 +33,5 @@ class MiddleOfTheLinkedList {
             list = list.next;
         }
         System.out.println();
-    }
-}
-
-class ListNode {
-    int val;
-    ListNode next;
-
-    ListNode(int val) {
-        this.val = val;
-    }
-
-    ListNode(int val, ListNode next) {
-        this.val = val;
-        this.next = next;
     }
 }
