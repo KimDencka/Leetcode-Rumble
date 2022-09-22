@@ -44,7 +44,7 @@ class MergeTwoSortedLists {
         return head;
     }
 
-    public static void printAll(ListNode list) {
+    private static void printAll(ListNode list) {
         while (list != null) {
             System.out.print(list.val + " ");
             list = list.next;

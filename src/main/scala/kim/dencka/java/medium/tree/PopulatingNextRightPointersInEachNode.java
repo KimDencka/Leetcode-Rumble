@@ -63,7 +63,7 @@ class PopulatingNextRightPointersInEachNode {
 //        return root;
 //    }
 
-    public static void printAll(Node tree) {
+    private static void printAll(Node tree) {
         if (tree != null) {
             System.out.println(tree.val);
             printAll(tree.left);
