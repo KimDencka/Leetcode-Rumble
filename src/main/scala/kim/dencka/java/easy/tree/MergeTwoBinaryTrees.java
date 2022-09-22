@@ -54,7 +54,7 @@ class MergeTwoBinaryTrees {
 //    }
 
 
-    public static void printAll(TreeNode tree) {
+    private static void printAll(TreeNode tree) {
         if (tree != null) {
             System.out.println(tree.val);
             printAll(tree.left);
