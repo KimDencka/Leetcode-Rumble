@@ -58,5 +58,4 @@ class LetterCasePermutation {
 //        chars[ind] = (char) (ch - 'a' + 'A');
 //        return new String(chars);
 //    }
-
 }
