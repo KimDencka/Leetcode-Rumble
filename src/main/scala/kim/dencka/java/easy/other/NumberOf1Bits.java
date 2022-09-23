@@ -4,8 +4,6 @@ class NumberOf1Bits {
     public static void main(String[] args) {
         System.out.println(hammingWeight(0b00000000000000000000000000001011)); // 521
         System.out.println(hammingWeight(0b11111111111111111111111111111101));
-
-        System.out.println(10 & 9);
     }
 
     public static int hammingWeight(int n) {
