@@ -12,20 +12,35 @@ class MiddleOfTheLinkedList {
         printAll(middleNode(input));
     }
 
+    // Two Pointers
     public static ListNode middleNode(ListNode head) {
-        ListNode list = head;
-        int depth = 0;
-        while (list != null) {
-            depth++;
-            list = list.next;
+        ListNode slow = head;
+        ListNode fast = head;
+        while (fast.next != null) {
+            if (fast.next.next == null) {
+                return slow.next;
+            }
+            slow = slow.next;
+            fast = fast.next.next;
         }
-        depth = depth / 2;
-        while (depth > 0) {
-            head = head.next;
-            depth--;
-        }
-        return head;
+        return slow;
     }
+
+    //Iterative
+//    public static ListNode middleNode(ListNode head) {
+//        ListNode list = head;
+//        int depth = 0;
+//        while (list != null) {
+//            depth++;
+//            list = list.next;
+//        }
+//        depth = depth / 2;
+//        while (depth > 0) {
+//            head = head.next;
+//            depth--;
+//        }
+//        return head;
+//    }
 
     private static void printAll(ListNode list) {
         while (list != null) {
