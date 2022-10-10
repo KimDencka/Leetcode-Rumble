@@ -1,6 +1,8 @@
 package kim.dencka.java.medium.collection;
 
 class ArithmeticSlices {
+    // KIM_INFO NOT SOLVED IN SCALA
+
     public static void main(String[] args) {
         System.out.println(numberOfArithmeticSlices(new int[]{1, 2, 3, 4, 1, 3, 4, 2, 4, 5, 10, 20, 30}));
     }

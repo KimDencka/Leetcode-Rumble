@@ -1,6 +1,8 @@
 package kim.dencka.java.medium.other;
 
 class DecodeWays {
+    // KIM_INFO NOT SOLVED IN SCALA
+
     public static void main(String[] args) {
         System.out.println(numDecodings("123456204568"));
     }
