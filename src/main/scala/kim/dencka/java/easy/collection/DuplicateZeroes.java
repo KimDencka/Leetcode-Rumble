@@ -18,11 +18,9 @@ class DuplicateZeroes {
                 arr[i] = stack.pop();
             } else {
                 arr[i++] = stack.pop();
-                try {
+                if (i < arr.length) {
                     arr[i] = 0;
-                } catch (Exception e) {
-                    break;
-                }
+                } else break;
             }
         }
     }
