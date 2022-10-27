@@ -1,8 +1,6 @@
 package kim.dencka.java.easy.collection;
 
 class FindTheDistanceValueBetweenTwoArrays {
-    // KIM_INFO NOT SOLVED IN SCALA
-
     public static void main(String[] args) {
         int[] arr1 = {2, 1, 100, 3};
         int[] arr2 = {-5, -2, 10, -3, 7};

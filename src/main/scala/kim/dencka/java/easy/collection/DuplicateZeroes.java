@@ -3,8 +3,6 @@ package kim.dencka.java.easy.collection;
 import java.util.*;
 
 class DuplicateZeroes {
-    // KIM_INFO NOT SOLVED IN SCALA
-
     public static void main(String[] args) {
         duplicateZeros(new int[]{1, 0, 2, 3, 0, 4, 5, 0});
         duplicateZeros(new int[]{0, 0, 0, 0, 0, 0, 0});

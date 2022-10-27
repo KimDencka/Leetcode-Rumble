@@ -1,8 +1,6 @@
 package kim.dencka.java.easy.other;
 
 class N_thTribonacciNumber {
-    // KIM_INFO NOT SOLVED IN SCALA
-
     public static void main(String[] args) {
         System.out.println(tribonacci(1)); // 1
         System.out.println(tribonacci(4)); // 4

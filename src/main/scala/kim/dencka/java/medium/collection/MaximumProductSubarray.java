@@ -1,8 +1,6 @@
 package kim.dencka.java.medium.collection;
 
 class MaximumProductSubarray {
-    // KIM_INFO NOT SOLVED IN SCALA
-
     public static void main(String[] args) {
         System.out.println(maxProduct(new int[]{2, 3, -2, 4}));
     }

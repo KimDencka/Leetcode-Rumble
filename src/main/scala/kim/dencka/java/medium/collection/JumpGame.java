@@ -1,8 +1,6 @@
 package kim.dencka.java.medium.collection;
 
 class JumpGame {
-    // KIM_INFO NOT SOLVED IN SCALA
-
     public static void main(String[] args) {
         System.out.println(canJump(new int[]{2, 3, 1, 1, 4}));
     }

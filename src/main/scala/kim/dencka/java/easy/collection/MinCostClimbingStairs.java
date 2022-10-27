@@ -1,8 +1,6 @@
 package kim.dencka.java.easy.collection;
 
 class MinCostClimbingStairs {
-    // KIM_INFO NOT SOLVED IN SCALA
-
     public static void main(String[] args) {
         System.out.println(minCostClimbingStairs(new int[]{1, 100, 1, 1, 1, 100, 1, 1, 100, 1}));
     }

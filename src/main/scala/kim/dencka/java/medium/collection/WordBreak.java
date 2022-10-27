@@ -3,8 +3,6 @@ package kim.dencka.java.medium.collection;
 import java.util.*;
 
 class WordBreak {
-    // KIM_INFO NOT SOLVED IN SCALA
-
     public static void main(String[] args) {
         List<String> input = new ArrayList<>();
         input.add("leeet");
@@ -18,7 +16,7 @@ class WordBreak {
         dp[n] = true;
         for (int i = n - 1; i >= 0; i--) {
             for (String w : wordDict) {
-                if (i + w.length() <= n && s.substring(i, i + w.length()).equals(w)) {
+                if (i + w.length() <= n && s.startsWith(w, i)) {
                     dp[i] = dp[i + w.length()];
                 }
                 if (dp[i]) break;

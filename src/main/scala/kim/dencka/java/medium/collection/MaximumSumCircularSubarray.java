@@ -1,8 +1,6 @@
 package kim.dencka.java.medium.collection;
 
 class MaximumSumCircularSubarray {
-    // KIM_INFO NOT SOLVED IN SCALA
-
     public static void main(String[] args) {
         System.out.println(maxSubarraySumCircular(new int[]{5, -3, 5}));
     }

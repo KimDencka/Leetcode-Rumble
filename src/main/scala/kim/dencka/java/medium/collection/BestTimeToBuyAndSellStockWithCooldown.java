@@ -1,8 +1,6 @@
 package kim.dencka.java.medium.collection;
 
 class BestTimeToBuyAndSellStockWithCooldown {
-    // KIM_INFO NOT SOLVED IN SCALA
-
     public static void main(String[] args) {
         System.out.println(maxProfit(new int[]{1, 2, 0, 2, 3, 0, 2}));
     }

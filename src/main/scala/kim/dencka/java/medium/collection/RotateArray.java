@@ -3,8 +3,6 @@ package kim.dencka.java.medium.collection;
 import java.util.Arrays;
 
 class RotateArray {
-    // KIM_INFO NOT SOLVED IN SCALA
-
     public static void main(String[] args) {
         int[] input = {1, 2, 3, 4, 5, 6, 7};
         rotate(input, 3);

@@ -1,8 +1,6 @@
 package kim.dencka.java.medium.collection;
 
 class BestSightseeingPair {
-    // KIM_INFO NOT SOLVED IN SCALA
-
     public static void main(String[] args) {
         System.out.println(maxScoreSightseeingPair(new int[]{8, 1, 5, 2, 6}));
     }

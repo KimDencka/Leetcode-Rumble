@@ -3,8 +3,6 @@ package kim.dencka.java.medium.other;
 import java.util.HashMap;
 
 class PermutationInString {
-    // KIM_INFO NOT SOLVED IN SCALA
-
     public static void main(String[] args) {
         System.out.println(checkInclusion("ab", "ab"));
     }

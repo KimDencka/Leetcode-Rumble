@@ -1,8 +1,6 @@
 package kim.dencka.java.medium.collection;
 
 class BestTimeToBuyAndSellStockWithTransactionFee {
-    // KIM_INFO NOT SOLVED IN SCALA
-
     public static void main(String[] args) {
         System.out.println(maxProfit(new int[]{1, 3, 2, 8, 4, 9}, 2));
     }

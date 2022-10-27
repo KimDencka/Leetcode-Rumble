@@ -3,8 +3,6 @@ package kim.dencka.java.medium.collection;
 import java.util.Arrays;
 
 class MinimumFallingPathSum {
-    // KIM_INFO NOT SOLVED IN SCALA
-
     public static void main(String[] args) {
         int[][] input = {{2, 1, 3}, {6, 5, 4}, {7, 8, 9}};
         System.out.println(minFallingPathSum(input));

@@ -3,8 +3,6 @@ package kim.dencka.java.medium.collection;
 import java.util.*;
 
 class FourSum {
-    // KIM_INFO NOT SOLVED IN SCALA
-
     public static void main(String[] args) {
         int[] nums = {1000000000, 1000000000, 1000000000, 1000000000};
         printlnAll(fourSum(nums, -294967296));

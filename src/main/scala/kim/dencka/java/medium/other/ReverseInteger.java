@@ -1,8 +1,6 @@
 package kim.dencka.java.medium.other;
 
 class ReverseInteger {
-    // KIM_INFO NOT SOLVED IN SCALA
-
     public static void main(String[] args) {
         System.out.println(reverse(-123));
     }
