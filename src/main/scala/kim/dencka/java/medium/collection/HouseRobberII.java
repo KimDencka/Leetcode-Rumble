@@ -1,8 +1,6 @@
 package kim.dencka.java.medium.collection;
 
 class HouseRobberII {
-    // KIM_INFO NOT SOLVED IN SCALA
-
     public static void main(String[] args) {
         System.out.println(rob(new int[]{1, 2, 3, 1}));
         System.out.println(rob(new int[]{1000, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11}));

@@ -3,8 +3,6 @@ package kim.dencka.java.medium.collection;
 import java.util.*;
 
 class MergeIntervals {
-    // KIM_INFO NOT SOLVED IN SCALA
-
     public static void main(String[] args) {
         int[][] input = {{1, 3}, {2, 6}, {8, 10}, {15, 18}};
         System.out.println(Arrays.deepToString(merge(input)));

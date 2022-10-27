@@ -3,8 +3,6 @@ package kim.dencka.java.medium.collection;
 import java.util.*;
 
 class RottingOranges {
-    // KIM_INFO NOT SOLVED IN SCALA
-
     public static void main(String[] args) {
         int[][] input = {{2, 1, 1}, {1, 1, 0}, {0, 1, 1}};
         System.out.println(orangesRotting(input));

@@ -3,9 +3,6 @@ package kim.dencka.java.medium.collection;
 import java.util.Arrays;
 
 class FindFirstAndLastPositionOfElementInSortedArray {
-
-    // KIM_INFO NOT SOLVED IN SCALA
-
     public static void main(String[] args) {
         int[] nums = {5, 8, 8, 8, 8, 10};
         System.out.println(Arrays.toString(searchRange(nums, 8)));

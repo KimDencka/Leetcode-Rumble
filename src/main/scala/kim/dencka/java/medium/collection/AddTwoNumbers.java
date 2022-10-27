@@ -3,8 +3,6 @@ package kim.dencka.java.medium.collection;
 import kim.dencka.java.payloads.ListNode;
 
 class AddTwoNumbers {
-    // KIM_INFO NOT SOLVED IN SCALA
-
     public static void main(String[] args) {
         ListNode l1 =
                 new ListNode(9,

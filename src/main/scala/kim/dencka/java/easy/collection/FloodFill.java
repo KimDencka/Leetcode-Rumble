@@ -3,8 +3,6 @@ package kim.dencka.java.easy.collection;
 import java.util.Arrays;
 
 class FloodFill {
-    // KIM_INFO NOT SOLVED IN SCALA
-
     public static void main(String[] args) {
         int[][] input = {{1, 1, 1, 1}, {1, 1, 0, 0}, {1, 0, 1, 1}};
         System.out.println(Arrays.deepToString(floodFill(input, 1, 1, 2)));

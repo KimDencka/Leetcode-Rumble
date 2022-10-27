@@ -3,9 +3,6 @@ package kim.dencka.java.easy.collection;
 import java.util.*;
 
 class SquaresOfASortedArray {
-
-    // KIM_INFO NOT SOLVED IN SCALA
-
     public static void main(String[] args) {
         System.out.println(Arrays.toString(sortedSquares(new int[]{-7, -3, 2, 3, 11})));
     }

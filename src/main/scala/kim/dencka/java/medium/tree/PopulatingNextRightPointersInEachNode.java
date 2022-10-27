@@ -3,8 +3,6 @@ package kim.dencka.java.medium.tree;
 import kim.dencka.java.payloads.Node;
 
 class PopulatingNextRightPointersInEachNode {
-    // KIM_INFO NOT SOLVED IN SCALA
-
     public static void main(String[] args) {
         Node node = new Node(1);
         node.left = new Node(2);

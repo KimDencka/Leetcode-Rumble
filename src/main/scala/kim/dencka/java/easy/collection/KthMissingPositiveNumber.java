@@ -1,9 +1,6 @@
 package kim.dencka.java.easy.collection;
 
 class KthMissingPositiveNumber {
-
-    // KIM_INFO NOT SOLVED IN SCALA
-
     public static void main(String[] args) {
         int[] nums = {2, 3, 4, 7, 11};
         System.out.println(findKthPositive(nums, 5));

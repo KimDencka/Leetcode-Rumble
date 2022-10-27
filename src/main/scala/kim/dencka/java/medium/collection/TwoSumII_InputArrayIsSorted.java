@@ -3,8 +3,6 @@ package kim.dencka.java.medium.collection;
 import java.util.Arrays;
 
 class TwoSumII_InputArrayIsSorted {
-    // KIM_INFO NOT SOLVED IN SCALA
-
     public static void main(String[] args) {
         System.out.println(Arrays.toString(twoSum(new int[]{2, 7, 11, 15}, 9)));
     }

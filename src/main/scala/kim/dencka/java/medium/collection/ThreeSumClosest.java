@@ -3,8 +3,6 @@ package kim.dencka.java.medium.collection;
 import java.util.*;
 
 class ThreeSumClosest {
-    // KIM_INFO NOT SOLVED IN SCALA
-
     public static void main(String[] args) {
         int[] nums = {-1, 2, 1, -4, 3, 4, 5, 6, 7, 8, 9, -2, -3, -5, -6, -7, -8};
         System.out.println(threeSumClosest(nums, 1));

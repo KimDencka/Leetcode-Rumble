@@ -3,8 +3,6 @@ package kim.dencka.java.medium.collection;
 import java.util.*;
 
 class Triangle {
-    // KIM_INFO NOT SOLVED IN SCALA
-
     public static void main(String[] args) {
         List<List<Integer>> input = new ArrayList<>(Arrays.asList(
                 Arrays.asList(2),

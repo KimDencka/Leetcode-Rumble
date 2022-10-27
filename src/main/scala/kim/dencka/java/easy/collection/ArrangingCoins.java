@@ -1,9 +1,6 @@
 package kim.dencka.java.easy.collection;
 
 class ArrangingCoins {
-
-    // KIM_INFO NOT SOLVED IN SCALA
-
     public static void main(String[] args) {
         System.out.println(arrangeCoins(10));
     }

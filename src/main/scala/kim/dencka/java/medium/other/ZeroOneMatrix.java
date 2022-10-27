@@ -3,7 +3,7 @@ package kim.dencka.java.medium.other;
 import java.util.*;
 
 class ZeroOneMatrix {
-    // KIM_INFO NOT SOLVED IN SCALA
+    
 
     public static void main(String[] args) {
         int[][] input = {{0, 0, 0}, {0, 1, 0}, {1, 1, 1}};
