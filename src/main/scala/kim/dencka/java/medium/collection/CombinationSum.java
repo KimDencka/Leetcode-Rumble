@@ -2,7 +2,7 @@ package kim.dencka.java.medium.collection;
 
 import java.util.*;
 
-class CombinationsSum {
+class CombinationSum {
     public static void main(String[] args) {
         int[] input = {2, 3, 6, 7};
         System.out.println(combinationSum(input, 7));
