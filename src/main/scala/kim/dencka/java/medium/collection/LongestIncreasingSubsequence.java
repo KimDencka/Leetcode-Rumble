@@ -12,10 +12,8 @@ class LongestIncreasingSubsequence {
         int[] lis = new int[nums.length];
         Arrays.fill(lis, 1);
         for (int i = 1; i < lis.length; i++) {
-            int cur = nums[i];
             for (int j = 0; j < i; j++) {
-                int other = nums[j];
-                if (other < cur && lis[i] < lis[j] + 1) {
+                if (nums[j] < nums[i] && lis[i] < lis[j] + 1) {
                     lis[i] = lis[j] + 1;
                 }
             }
