@@ -1,4 +1,4 @@
-package leetcode
+package kim.dencka.scala.medium.other
 
 object StringToIntegerATOI extends App {
   def myAtoi(s: String): Int = {
