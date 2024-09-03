@@ -1,4 +1,4 @@
-package kim.dencka.scala.medium
+package kim.dencka.scala.medium.collection
 
 object RotateImage extends App {
 
