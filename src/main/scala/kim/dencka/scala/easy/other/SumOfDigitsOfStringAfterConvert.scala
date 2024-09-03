@@ -42,6 +42,4 @@ object SumOfDigitsOfStringAfterConvert extends App {
   println(getLucky("zbax", 2))               // 8
   println(getLucky("vbyytoijnbgtyrjlsc", 2)) // 15
 
-  val list = List(1, 2, 3, 4, 5, 6, 7, 8, 9)
-
 }
