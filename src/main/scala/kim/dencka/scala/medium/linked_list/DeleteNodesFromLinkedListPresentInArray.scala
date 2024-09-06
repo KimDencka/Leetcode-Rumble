@@ -3,34 +3,34 @@ package kim.dencka.scala.medium.linked_list
 import kim.dencka.scala.payloads.LinkedListStructure._
 
 object DeleteNodesFromLinkedListPresentInArray extends App {
+  // N - length of linked list, M - array length
+  // time - 80% O(N + M), memory - 90% O(M)
+//  def modifiedList(nums: Array[Int], head: ListNode): ListNode = {
+//    val numsSet = nums.toSet
+//    @annotation.tailrec
+//    def skipNodes(node: ListNode): ListNode =
+//      if (numsSet.contains(node.x)) skipNodes(node.next)
+//      else node
+//
+//    val newHead = skipNodes(head)
+//
+//    @annotation.tailrec
+//    def deleteNodes(prev: ListNode, node: ListNode): Unit =
+//      if (node != null) {
+//        if (numsSet.contains(node.x)) {
+//          prev.next = node.next
+//          deleteNodes(prev, node.next)
+//        } else {
+//          deleteNodes(node, node.next)
+//        }
+//      }
+//
+//    deleteNodes(newHead, newHead.next)
+//    newHead
+//  }
 
-  // time - 80%, memory - 90%
-  def modifiedList(nums: Array[Int], head: ListNode): ListNode = {
-    val numsSet = nums.toSet
-    @annotation.tailrec
-    def skipNodes(node: ListNode): ListNode =
-      if (numsSet.contains(node.x)) skipNodes(node.next)
-      else node
 
-    val newHead = skipNodes(head)
-
-    @annotation.tailrec
-    def deleteNodes(prev: ListNode, node: ListNode): Unit =
-      if (node != null) {
-        if (numsSet.contains(node.x)) {
-          prev.next = node.next
-          deleteNodes(prev, node.next)
-        } else {
-          deleteNodes(node, node.next)
-        }
-      }
-
-    deleteNodes(newHead, newHead.next)
-    newHead
-  }
-
-
-  // elegant functional solution; time - 50%, memory - 100%
+  // elegant functional solution; time - 50% O(N + M), memory - 100% O(N + M)
   def modifiedList(nums: Array[Int], head: ListNode): ListNode = {
     val numsSet = nums.toSet
     @annotation.tailrec
