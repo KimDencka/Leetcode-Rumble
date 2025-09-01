@@ -2,14 +2,10 @@ package kim.dencka.java.easy.collection;
 
 public class MergeStringsAlternately {
     public static void main(String[] args) {
-        String input1 = "abc";
-        String input2 = "pqr";
-
+        String input1 = "abc", input2 = "pqr";
         System.out.println(mergeAlternately(input1, input2));
 
-        String input3 = "ab";
-        String input4 = "pqrs";
-
+        String input3 = "ab", input4 = "pqrs";
         System.out.println(mergeAlternately(input3, input4));
     }
 
