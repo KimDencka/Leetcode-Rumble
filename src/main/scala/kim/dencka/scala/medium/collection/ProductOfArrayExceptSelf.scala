@@ -4,7 +4,7 @@ object ProductOfArrayExceptSelf extends App {
 
   // elegant
   def productExceptSelf(nums: Array[Int]): Array[Int] = {
-    val _left  = nums.scanLeft(1)(_ * _).dropRight(1)
+    val _left  = nums.scanLeft(1)(_ * _).init
     val _right = nums.scanRight(1)(_ * _).tail
 
     _left zip _right map { case (l, r) => l * r }
