@@ -9,11 +9,14 @@ public class IsSubsequence {
     public static boolean isSubsequence(String s, String t) {
         int i = 0, j = 0;
 
-        while (i < s.length() && j < t.length()) {
-            if (s.charAt(i) == t.charAt(j)) i++;
+        char[] ss = s.toCharArray(); // using array is faster
+        char[] tt = t.toCharArray(); // get using index faster than 'charAt' method of the String class.
+
+        while (i < ss.length && j < tt.length) {
+            if (ss[i] == tt[j]) i++;
             j++;
         }
 
-        return i == s.length();
+        return i == ss.length;
     }
 }
