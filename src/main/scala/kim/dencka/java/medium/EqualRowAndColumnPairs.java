@@ -12,8 +12,8 @@ public class EqualRowAndColumnPairs {
     public static int equalPairs(int[][] grid) {
         int counter = 0;
         Map<Integer, Integer> map = new HashMap<>();
-        for (int i = 0; i < grid.length; i++) {
-            int key = rowHashCode(grid[i]);
+        for (int[] row : grid) {
+            int key = rowHashCode(row);
             map.put(key, map.getOrDefault(key, 0) + 1);
         }
         for (int i = 0; i < grid.length; i++) {
