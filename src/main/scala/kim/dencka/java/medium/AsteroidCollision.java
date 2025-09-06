@@ -1,8 +1,6 @@
 package kim.dencka.java.medium;
 
-import java.util.ArrayDeque;
 import java.util.Arrays;
-import java.util.Deque;
 
 public class AsteroidCollision {
     public static void main(String[] args) {
