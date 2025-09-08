@@ -5,7 +5,7 @@ import kim.dencka.java.payloads.ListNode;
 public class DeleteTheMiddleNodeOfALinkedList {
     public static void main(String[] args) {
         ListNode list = new ListNode(1, new ListNode(2, new ListNode(3, new ListNode(4, new ListNode(5)))));
-        ListNode.printAll(deleteMiddle(list));
+        ListNode.printAll(deleteMiddle(list)); // 1 2 4 5
     }
 
     public static ListNode deleteMiddle(ListNode head) {
