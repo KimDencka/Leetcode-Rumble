@@ -5,7 +5,7 @@ import kim.dencka.java.payloads.ListNode;
 public class OddEvenLinkedList {
     public static void main(String[] args) {
         ListNode list = new ListNode(1, new ListNode(2, new ListNode(3, new ListNode(4, new ListNode(5)))));
-        ListNode.printAll(oddEvenList(list));
+        ListNode.printAll(oddEvenList(list)); // 1 3 5 2 4
     }
 
     public static ListNode oddEvenList(ListNode head) {
