@@ -6,7 +6,7 @@ class MergeTwoSortedLists {
     public static void main(String[] args) {
         ListNode list1 = new ListNode(1, new ListNode(2, new ListNode(4)));
         ListNode list2 = new ListNode(1, new ListNode(3, new ListNode(4)));
-        printAll(mergeTwoLists(list1, list2));
+        mergeTwoLists(list1, list2).printAll();
     }
 
     public static ListNode mergeTwoLists(ListNode list1, ListNode list2) {
@@ -44,11 +44,4 @@ class MergeTwoSortedLists {
         return head;
     }
 
-    private static void printAll(ListNode list) {
-        while (list != null) {
-            System.out.print(list.val + " ");
-            list = list.next;
-        }
-        System.out.println();
-    }
 }

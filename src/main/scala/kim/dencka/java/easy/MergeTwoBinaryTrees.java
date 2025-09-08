@@ -14,7 +14,7 @@ class MergeTwoBinaryTrees {
         bt2.right = new TreeNode(3);
         bt2.right.right = new TreeNode(7);
 
-        printAll(mergeTrees(bt1, bt2));
+        mergeTrees(bt1, bt2).printAll();
 
     }
 
@@ -53,13 +53,5 @@ class MergeTwoBinaryTrees {
 //        return t1;
 //    }
 
-
-    private static void printAll(TreeNode tree) {
-        if (tree != null) {
-            System.out.println(tree.val);
-            printAll(tree.left);
-            printAll(tree.right);
-        }
-    }
 }
 

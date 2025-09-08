@@ -9,7 +9,7 @@ class MiddleOfTheLinkedList {
                         new ListNode(3,
                                 new ListNode(4,
                                         new ListNode(5)))));
-        printAll(middleNode(input));
+        middleNode(input).printAll();
     }
 
     // Two Pointers
@@ -42,11 +42,4 @@ class MiddleOfTheLinkedList {
 //        return head;
 //    }
 
-    private static void printAll(ListNode list) {
-        while (list != null) {
-            System.out.print(list.val + " ");
-            list = list.next;
-        }
-        System.out.println();
-    }
 }
