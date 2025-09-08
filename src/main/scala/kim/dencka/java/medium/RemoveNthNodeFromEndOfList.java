@@ -9,7 +9,7 @@ class RemoveNthNodeFromEndOfList {
                         new ListNode(3,
                                 new ListNode(4,
                                         new ListNode(5)))));
-        printAll(removeNthFromEnd(input, 2));
+        ListNode.printAll(removeNthFromEnd(input, 2));
     }
 
     public static ListNode removeNthFromEnd(ListNode head, int n) {
@@ -43,14 +43,6 @@ class RemoveNthNodeFromEndOfList {
         slow.next = fast.next;
 
         return head;
-    }
-
-    private static void printAll(ListNode list) {
-        while (list != null) {
-            System.out.print(list.val + " ");
-            list = list.next;
-        }
-        System.out.println();
     }
 
 }

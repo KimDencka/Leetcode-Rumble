@@ -19,7 +19,7 @@ class AddTwoNumbers {
                                 new ListNode(9,
                                         new ListNode(9))));
 
-        printAll(addTwoNumbers(l1, l2));
+        addTwoNumbers(l1, l2).printAll();
     }
 
     public static ListNode addTwoNumbers(ListNode l1, ListNode l2) {
@@ -46,11 +46,5 @@ class AddTwoNumbers {
         return result.next;
     }
 
-    static void printAll(ListNode list) {
-        while (list != null) {
-            System.out.print(list.val + " ");
-            list = list.next;
-        }
-    }
 }
 

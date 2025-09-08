@@ -12,7 +12,7 @@ class PopulatingNextRightPointersInEachNode {
         node.right.left = new Node(6);
         node.right.right = new Node(7);
 
-        printAll(connect(node));
+        connect(node).printAll();
     }
 
     private static Node getNextRight(Node root) {
@@ -61,12 +61,4 @@ class PopulatingNextRightPointersInEachNode {
 //        return root;
 //    }
 
-    private static void printAll(Node tree) {
-        if (tree != null) {
-            System.out.println(tree.val);
-            printAll(tree.left);
-            printAll(tree.right);
-            printAll(tree.next);
-        }
-    }
 }

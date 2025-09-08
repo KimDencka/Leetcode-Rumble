@@ -5,32 +5,25 @@ import kim.dencka.java.payloads.ListNode;
 class ReverseLinkedList {
     public static void main(String[] args) {
         ListNode input = new ListNode(1, new ListNode(2, new ListNode(3, new ListNode(4, new ListNode(5)))));
-        printAll(reverseList(input));
+        reverseList(input).printAll();
     }
 
+    // Iterative
     public static ListNode reverseList(ListNode head) {
-        // Iterative
-        ListNode res = null, list = null;
+        ListNode prev = null;
         while (head != null) {
-            res = new ListNode(head.val, list);
-            list = res;
-            head = head.next;
+            ListNode next = head.next;
+            head.next = prev;
+            prev = head;
+            head = next;
         }
-        return res;
-
-//        return reverse(head, null);
+        return prev;
     }
+
     // Recursive
     public static ListNode reverse(ListNode list, ListNode acc) {
         if (list == null) return acc;
         else return reverse(list.next, new ListNode(list.val, acc));
     }
 
-    private static void printAll(ListNode list) {
-        while (list != null) {
-            System.out.print(list.val + " ");
-            list = list.next;
-        }
-        System.out.println();
-    }
 }
