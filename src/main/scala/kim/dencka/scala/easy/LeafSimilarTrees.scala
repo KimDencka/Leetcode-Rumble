@@ -1,6 +1,6 @@
 package kim.dencka.scala.easy
 
-object Leaf_SimilarTrees extends App {
+object LeafSimilarTrees extends App {
 
   class TreeNode(
     val value: Int,
