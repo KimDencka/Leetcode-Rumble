@@ -1,0 +1,38 @@
+package kim.dencka.java.medium;
+
+import kim.dencka.java.payloads.TreeNode;
+
+public class LongestZigZagPathInABinaryTree {
+    public static void main(String[] args) {
+        TreeNode tree = new TreeNode(1);
+        tree.right = new TreeNode(1);
+        tree.right.left = new TreeNode(1);
+        tree.right.right = new TreeNode(1);
+        tree.right.right.left = new TreeNode(1);
+        tree.right.right.left.right = new TreeNode(1);
+        tree.right.right.left.right.right = new TreeNode(1);
+        tree.right.right.right = new TreeNode(1);
+
+        System.out.println(longestZigZag(tree)); // 3
+    }
+
+    static int pathLength = 0;
+
+    public static int longestZigZag(TreeNode root) {
+        dsf(root, true, 0);
+        return pathLength;
+    }
+
+    public static void dsf(TreeNode tree, boolean goLeft, int steps) {
+        if (tree == null) return;
+
+        pathLength = Math.max(pathLength, steps);
+        if (goLeft) {
+            dsf(tree.left, false, steps + 1);
+            dsf(tree.right, true, 1);
+        } else {
+            dsf(tree.left, false, 1);
+            dsf(tree.right, true, steps + 1);
+        }
+    }
+}
