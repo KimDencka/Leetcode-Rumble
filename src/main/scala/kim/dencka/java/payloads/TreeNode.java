@@ -1,7 +1,6 @@
 package kim.dencka.java.payloads;
 
-import java.util.ArrayDeque;
-import java.util.Queue;
+import java.util.*;
 
 public class TreeNode {
     public int val;
@@ -24,13 +23,36 @@ public class TreeNode {
     }
 
     // Use for nullable ListNodes; e.g. TreeNode.printAll(node);
+    // Prints tree in LeetCode-style array
     public static void printAll(TreeNode tree) {
-        if (tree != null) {
-            System.out.println(tree.val);
-            printAll(tree.left);
-            printAll(tree.right);
+        if (tree == null) {
+            System.out.println("[]");
+            return;
         }
+
+        Queue<TreeNode> queue = new LinkedList<>();
+        queue.offer(tree);
+
+        List<String> result = new java.util.ArrayList<>();
+
+        while (!queue.isEmpty()) {
+            TreeNode node = queue.poll();
+            if (node == null) {
+                result.add("null");
+            } else {
+                result.add(String.valueOf(node.val));
+                queue.offer(node.left);
+                queue.offer(node.right);
+            }
+        }
+
+        int last = result.size() - 1;
+        while (last >= 0 && result.get(last).equals("null")) last--;
+        result = result.subList(0, last + 1);
+
+        System.out.println("[" + String.join(",", result) + "]");
     }
+
 
     // Build tree from LeetCode-style array
     public static TreeNode fromArray(Integer[] arr) {
