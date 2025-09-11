@@ -17,18 +17,14 @@ public class TreeNode {
         this.right = right;
     }
 
-    // Use with direct call; e.g. treeNode.printAll();
-    public void printAll() {
-        printAll(this);
+    @Override
+    public String toString() {
+        return printAll(this);
     }
 
-    // Use for nullable ListNodes; e.g. TreeNode.printAll(node);
     // Prints tree in LeetCode-style array
-    public static void printAll(TreeNode tree) {
-        if (tree == null) {
-            System.out.println("[]");
-            return;
-        }
+    private String printAll(TreeNode tree) {
+        if (tree == null) return "[]";
 
         Queue<TreeNode> queue = new LinkedList<>();
         queue.offer(tree);
@@ -50,12 +46,24 @@ public class TreeNode {
         while (last >= 0 && result.get(last).equals("null")) last--;
         result = result.subList(0, last + 1);
 
-        System.out.println("[" + String.join(",", result) + "]");
+        return "[" + String.join(",", result) + "]";
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) return true;
+        if (!(obj instanceof TreeNode)) return false;
+        return this.toString().equals(obj.toString());
+    }
+
+    @Override
+    public int hashCode() {
+        return this.toString().hashCode();
     }
 
 
     // Build tree from LeetCode-style array
-    public static TreeNode fromArray(Integer[] arr) {
+    public static TreeNode fromArray(Integer... arr) {
         if (arr == null || arr.length == 0 || arr[0] == null) return null;
 
         TreeNode root = new TreeNode(arr[0]);

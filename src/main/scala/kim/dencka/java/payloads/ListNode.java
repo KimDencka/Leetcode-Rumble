@@ -1,5 +1,7 @@
 package kim.dencka.java.payloads;
 
+import java.util.*;
+
 public class ListNode {
     public int val;
     public ListNode next;
@@ -13,18 +15,38 @@ public class ListNode {
         this.next = next;
     }
 
-    // Use with direct call; e.g. node.printAll();
-    public void printAll() {
-        printAll(this);
-    }
-
-    // Use for nullable ListNodes; e.g. ListNode.printAll(node);
-    public static void printAll(ListNode node) {
-        while (node != null) {
-            System.out.print(node.val + " ");
-            node = node.next;
+    @Override
+    public String toString() {
+        List<String> values = new ArrayList<>();
+        ListNode curr = this;
+        while (curr != null) {
+            values.add(String.valueOf(curr.val));
+            curr = curr.next;
         }
-        System.out.println();
+        return "[" + String.join(",", values) + "]";
     }
 
+    public static ListNode fromArray(int... arr) {
+        if (arr == null || arr.length == 0) return null;
+
+        ListNode dummy = new ListNode(0);
+        ListNode curr = dummy;
+        for (int val : arr) {
+            curr.next = new ListNode(val);
+            curr = curr.next;
+        }
+        return dummy.next;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) return true;
+        if (!(obj instanceof TreeNode)) return false;
+        return this.toString().equals(obj.toString());
+    }
+
+    @Override
+    public int hashCode() {
+        return this.toString().hashCode();
+    }
 }
