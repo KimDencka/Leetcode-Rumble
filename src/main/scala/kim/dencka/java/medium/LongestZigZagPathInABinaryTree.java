@@ -19,20 +19,20 @@ public class LongestZigZagPathInABinaryTree {
     static int pathLength = 0;
 
     public static int longestZigZag(TreeNode root) {
-        dsf(root, true, 0);
+        dfs(root, true, 0);
         return pathLength;
     }
 
-    public static void dsf(TreeNode tree, boolean goLeft, int steps) {
+    public static void dfs(TreeNode tree, boolean goLeft, int steps) {
         if (tree == null) return;
 
         pathLength = Math.max(pathLength, steps);
         if (goLeft) {
-            dsf(tree.left, false, steps + 1);
-            dsf(tree.right, true, 1);
+            dfs(tree.left, false, steps + 1);
+            dfs(tree.right, true, 1);
         } else {
-            dsf(tree.left, false, 1);
-            dsf(tree.right, true, steps + 1);
+            dfs(tree.left, false, 1);
+            dfs(tree.right, true, steps + 1);
         }
     }
 }
