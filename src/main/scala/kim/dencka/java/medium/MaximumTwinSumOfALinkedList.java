@@ -4,8 +4,8 @@ import kim.dencka.java.payloads.ListNode;
 
 public class MaximumTwinSumOfALinkedList {
     public static void main(String[] args) {
-        ListNode list = new ListNode(3, new ListNode(2, new ListNode(6, new ListNode(4))));
-        System.out.println(pairSum(list));
+        ListNode list = ListNode.fromArray(3, 2, 6, 4);
+        System.out.println(pairSum(list)); // 8
     }
 
     public static int pairSum(ListNode head) {
