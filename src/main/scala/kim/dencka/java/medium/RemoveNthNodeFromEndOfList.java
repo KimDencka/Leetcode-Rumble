@@ -4,12 +4,8 @@ import kim.dencka.java.payloads.ListNode;
 
 class RemoveNthNodeFromEndOfList {
     public static void main(String[] args) {
-        ListNode input = new ListNode(1,
-                new ListNode(2,
-                        new ListNode(3,
-                                new ListNode(4,
-                                        new ListNode(5)))));
-        ListNode.printAll(removeNthFromEnd(input, 2));
+        ListNode input = ListNode.fromArray(1, 2, 3, 4, 5);
+        System.out.println(removeNthFromEnd(input, 2)); // [1,2,3,5]
     }
 
     public static ListNode removeNthFromEnd(ListNode head, int n) {
@@ -31,7 +27,7 @@ class RemoveNthNodeFromEndOfList {
             }
         }
 
-        int temp = 0;
+        int temp = 1;
         slow = head;
         ListNode fast = head.next;
 

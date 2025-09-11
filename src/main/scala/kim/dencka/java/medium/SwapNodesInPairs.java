@@ -4,8 +4,8 @@ import kim.dencka.java.payloads.ListNode;
 
 class SwapNodesInPairs {
     public static void main(String[] args) {
-        ListNode input = new ListNode(1, new ListNode(2, new ListNode(3, new ListNode(4, new ListNode(5, new ListNode(6, new ListNode(7, new ListNode(8, new ListNode(9)))))))));
-        swapPairs(input).printAll();
+        ListNode input = ListNode.fromArray(1, 2, 3, 4, 5, 6, 7, 8, 9);
+        System.out.println(swapPairs(input)); // [2,1,4,3,6,5,8,7,9]
     }
 
     public static ListNode swapPairs(ListNode head) {

@@ -4,8 +4,8 @@ import kim.dencka.java.payloads.ListNode;
 
 class ReverseLinkedList {
     public static void main(String[] args) {
-        ListNode input = new ListNode(1, new ListNode(2, new ListNode(3, new ListNode(4, new ListNode(5)))));
-        reverseList(input).printAll();
+        ListNode input = ListNode.fromArray(1, 2, 3, 4, 5);
+        System.out.println(reverseList(input)); // [5,4,3,2,1]
     }
 
     // Iterative

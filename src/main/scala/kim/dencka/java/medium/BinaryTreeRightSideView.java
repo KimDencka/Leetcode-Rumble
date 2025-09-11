@@ -9,7 +9,7 @@ import java.util.Queue;
 
 public class BinaryTreeRightSideView {
     public static void main(String[] args) {
-        TreeNode tree = TreeNode.fromArray(new Integer[]{1, 2, 3, 4, null, null, null, 5});
+        TreeNode tree = TreeNode.fromArray(1, 2, 3, 4, null, null, null, 5);
         System.out.println(rightSideView(tree)); // [1, 3, 4, 5]
     }
 

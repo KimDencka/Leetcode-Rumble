@@ -6,7 +6,7 @@ import java.util.Arrays;
 
 public class MaximumLevelSumOfABinaryTree {
     public static void main(String[] args) {
-        TreeNode tree = TreeNode.fromArray(new Integer[]{1, 7, 0, 7, -8, null, null});
+        TreeNode tree = TreeNode.fromArray(1, 7, 0, 7, -8, null, null);
         System.out.println(maxLevelSum(tree)); // 2
     }
 
