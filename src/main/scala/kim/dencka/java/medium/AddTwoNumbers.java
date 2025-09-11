@@ -4,22 +4,9 @@ import kim.dencka.java.payloads.ListNode;
 
 class AddTwoNumbers {
     public static void main(String[] args) {
-        ListNode l1 =
-                new ListNode(9,
-                        new ListNode(9,
-                                new ListNode(9,
-                                        new ListNode(9,
-                                                new ListNode(9,
-                                                        new ListNode(9,
-                                                                new ListNode(9)))))));
-
-        ListNode l2 =
-                new ListNode(9,
-                        new ListNode(9,
-                                new ListNode(9,
-                                        new ListNode(9))));
-
-        addTwoNumbers(l1, l2).printAll();
+        ListNode l1 = ListNode.fromArray(9, 9, 9, 9, 9, 9, 9);
+        ListNode l2 = ListNode.fromArray(9, 9, 9, 9);
+        System.out.println(addTwoNumbers(l1, l2)); // [8,9,9,9,0,0,0,1]
     }
 
     public static ListNode addTwoNumbers(ListNode l1, ListNode l2) {

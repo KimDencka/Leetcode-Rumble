@@ -4,8 +4,8 @@ import kim.dencka.java.payloads.TreeNode;
 
 public class SearchInABinarySearchTree {
     public static void main(String[] args) {
-        TreeNode tree = TreeNode.fromArray(new Integer[]{4, 2, 7, 1, 3});
-        searchBST(tree, 2).printAll(); // [2,1,3]
+        TreeNode tree = TreeNode.fromArray(4, 2, 7, 1, 3);
+        System.out.println(searchBST(tree, 2)); // [2,1,3]
     }
 
     public static TreeNode searchBST(TreeNode root, int val) {

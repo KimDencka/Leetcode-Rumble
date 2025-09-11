@@ -4,12 +4,8 @@ import kim.dencka.java.payloads.ListNode;
 
 class MiddleOfTheLinkedList {
     public static void main(String[] args) {
-        ListNode input = new ListNode(1,
-                new ListNode(2,
-                        new ListNode(3,
-                                new ListNode(4,
-                                        new ListNode(5)))));
-        middleNode(input).printAll();
+        ListNode input = ListNode.fromArray(1, 2, 3, 4, 5);
+        System.out.println(middleNode(input)); // [3,4,5]
     }
 
     // Two Pointers

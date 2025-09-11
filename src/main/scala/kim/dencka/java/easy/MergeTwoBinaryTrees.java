@@ -4,17 +4,9 @@ import kim.dencka.java.payloads.TreeNode;
 
 class MergeTwoBinaryTrees {
     public static void main(String[] args) {
-        TreeNode bt1 = new TreeNode(1);
-        TreeNode bt2 = new TreeNode(2);
-        bt1.left = new TreeNode(3);
-        bt1.left.left = new TreeNode(5);
-        bt1.right = new TreeNode(2);
-        bt2.left = new TreeNode(1);
-        bt2.left.right = new TreeNode(4);
-        bt2.right = new TreeNode(3);
-        bt2.right.right = new TreeNode(7);
-
-        mergeTrees(bt1, bt2).printAll();
+        TreeNode bt1 = TreeNode.fromArray(1, 3, 2, 5);
+        TreeNode bt2 = TreeNode.fromArray(2, 1, 3, null, 4, null, 7);
+        System.out.println(mergeTrees(bt1, bt2)); // [3,4,5,5,4,null,7]
 
     }
 
