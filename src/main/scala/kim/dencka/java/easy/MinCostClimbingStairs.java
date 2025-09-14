@@ -7,15 +7,15 @@ class MinCostClimbingStairs {
 
     public static int minCostClimbingStairs(int[] cost) {
         int n = cost.length;
-        if (n <= 2) return Math.min(cost[0], cost[1]);
-        int old = 0;
-        int cur = 0;
-        int step;
-        for (int j : cost) {
-            step = j + Math.min(old, cur);
-            old = cur;
-            cur = step;
+        if (n == 2) return Math.min(cost[0], cost[1]);
+        int first = 0;
+        int second = 0;
+        for (int c : cost) {
+            int cur = c + Math.min(first, second);
+            first = second;
+            second = cur;
         }
-        return Math.min(old, cur);
+
+        return Math.min(first, second);
     }
 }
