@@ -5,7 +5,7 @@ import java.util.*;
 class RottingOranges {
     public static void main(String[] args) {
         int[][] input = {{2, 1, 1}, {1, 1, 0}, {0, 1, 1}};
-        System.out.println(orangesRotting(input));
+        System.out.println(orangesRotting(input)); // 4
     }
 
     public static int orangesRotting(int[][] grid) {

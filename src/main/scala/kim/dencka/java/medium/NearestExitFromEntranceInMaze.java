@@ -6,8 +6,7 @@ import java.util.Queue;
 public class NearestExitFromEntranceInMaze {
     public static void main(String[] args) {
         char[][] maze = new char[][]{{'+', '+', '.', '+'}, {'.', '.', '.', '+'}, {'+', '+', '+', '.'},};
-        char[][] maze2 = new char[][]{{'.', '.', '.', '.'}, {'.', '.', '.', '.'}, {'.', '.', '.', '.'},};
-        System.out.println(nearestExit(maze2, new int[]{2, 2}));
+        System.out.println(nearestExit(maze, new int[]{1, 2})); // 1
     }
 
     public static int nearestExit(char[][] maze, int[] entrance) {
