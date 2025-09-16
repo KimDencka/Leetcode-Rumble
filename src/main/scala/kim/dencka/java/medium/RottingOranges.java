@@ -9,53 +9,41 @@ class RottingOranges {
     }
 
     public static int orangesRotting(int[][] grid) {
-        int n = grid.length;
-        int m = grid[0].length;
-        boolean[][] seen = new boolean[n][m];
-        Queue<Orange> q = new LinkedList<>();
-        int fresh = 0;
-
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j < m; j++) {
-                if (grid[i][j] == 2) {
-                    q.offer(new Orange(i, j, 0));
-                    seen[i][j] = true;
-                }
-                if (grid[i][j] == 1) fresh++;
+        int m = grid.length, n = grid[0].length;
+        Queue<int[]> rotten = new ArrayDeque<>();
+        int freshCount = 0;
+        for (int r = 0; r < m; r++) {
+            for (int c = 0; c < n; c++) {
+                if (grid[r][c] == 2) rotten.offer(new int[]{r, c});
+                if (grid[r][c] == 1) freshCount++;
             }
         }
 
         int[] row = {-1, 0, 1, 0};
-        int[] col = {0, 1, 0, -1};
-        int cnt = 0, time = 0;
-        int x, y;
+        int[] col = {0, -1, 0, 1};
 
-        while (!q.isEmpty()) {
-            Orange or = q.poll();
-            time = Math.max(time, or.ti);
-            for (int i = 0; i < 4; i++) {
-                x = or.i + row[i];
-                y = or.j + col[i];
-                if (x >= 0 && y >= 0 && x < n && y < m && !seen[x][y] && grid[x][y] == 1) {
-                    q.offer(new Orange(x, y, or.ti + 1));
-                    grid[x][y] = 2;
-                    seen[x][y] = true;
-                    cnt++;
+        int infected = 0, time = 0;
+        while (!rotten.isEmpty()) {
+            int size = rotten.size();
+            boolean isInfected = false;
+            for (int i = 0; i < size; i++) {
+                int[] pos = rotten.poll();
+                for (int j = 0; j < 4; j++) {
+                    int r = pos[0] + row[j];
+                    int c = pos[1] + col[j];
+
+                    if (r >= 0 && c >= 0 && r < m && c < n && grid[r][c] == 1) {
+                        grid[r][c] = 2;
+                        rotten.offer(new int[]{r, c});
+                        infected++;
+                        isInfected = true;
+                    }
                 }
             }
+            if (isInfected) time++;
         }
-        if (fresh != cnt) return -1;
+
+        if (freshCount != infected) return -1;
         return time;
-    }
-
-}
-
-class Orange {
-    int i, j, ti;
-
-    public Orange(int i, int j, int ti) {
-        this.i = i;
-        this.j = j;
-        this.ti = ti;
     }
 }
