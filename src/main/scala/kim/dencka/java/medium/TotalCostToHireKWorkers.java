@@ -18,14 +18,14 @@ class TotalCostToHireKWorkers {
         while (k > 0) {
             while (pql.size() < candidates && l <= r) pql.add(costs[l++]);
             while (pqr.size() < candidates && l <= r) pqr.add(costs[r--]);
-            int l_min = pql.size() > 0 ? pql.peek() : Integer.MAX_VALUE;
-            int r_min = pqr.size() > 0 ? pqr.peek() : Integer.MAX_VALUE;
+            int lMin = !pql.isEmpty() ? pql.peek() : Integer.MAX_VALUE;
+            int rMin = !pqr.isEmpty() ? pqr.peek() : Integer.MAX_VALUE;
             k--;
-            if (l_min <= r_min) {
-                sum += l_min;
+            if (lMin <= rMin) {
+                sum += lMin;
                 pql.poll();
             } else {
-                sum += r_min;
+                sum += rMin;
                 pqr.poll();
             }
 
