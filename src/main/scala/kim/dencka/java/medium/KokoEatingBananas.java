@@ -24,7 +24,7 @@ public class KokoEatingBananas {
     }
 
     public static boolean canEatInTime(int[] piles, int k, int h) {
-        int hours = 0;
+        long hours = 0;
         for (int pile : piles) {
             hours += (pile / k);
             if (pile % k != 0) hours++;
