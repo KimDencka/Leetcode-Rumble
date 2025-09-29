@@ -23,7 +23,7 @@ public class EditDistance {
                     dp[r][c] = Math.min(dp[r - 1][c - 1], Math.min(dp[r - 1][c], dp[r][c - 1])) + 1;
                     // dp[r-1][c-1] + 1 - replace the character at position r-1 in word1 with the character at position c-1 in word2.
                     // dp[r-1][c] + 1   - delete the character at position r-1 in word1.
-                    // dp[r][c-1] + 1   - insert the character at position c-1 in word2 into word1 at position i.
+                    // dp[r][c-1] + 1   - insert the character at position c-1 in word2 into word1 at position r.
                 }
             }
         }
